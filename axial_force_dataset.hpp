@@ -162,31 +162,9 @@ private:
 
 protected:
     /* Standard types */
-
-    // Standard tip types
-    std::string m_tip_types_ans[8] = {"Blunt", "Beveled", "Conical", 
-        "Sprotte", "Diamond", "Tuohy", "Franseen", "Uknown"};
-
-    // Sharpness classification
-    std::string m_sharpness_ans[3] = {"Sharp", "Blunt", "Uknown"};
-
-    // Possible lubrication states
-    std::string m_lubrication_ans[3] = {"Present", "Not present", "Uknown"};
-
+    
     // Possible tissue types
     std::string m_tissue_types_ans[2] = {"Biological", "Artificial"};
-
-    // Biological tissue organs
-    std::string m_location_ans[9] = {"Liver", "Prostate", "Breast", "Brain", 
-        "Heart", "Epidural", "Skin", "Muscle", "Fat"};
-
-    // Biological tissue animals
-    std::string m_animal_ans[5] = {"Human", "Bovine specimen", 
-        "Porcine specimen", "Rabbit specimen", "Chicken specimen"};
-
-    // Biological tissue states
-    std::string m_state_ans[2] = {"In vivo", "Ex vivo"};
-
 };
 
 
