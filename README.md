@@ -141,9 +141,9 @@ they are presented in the following table:
 
 |Quantity|Unit|
 | ---| ---|
-|`Needle Diameter`| Gauge|
-| `Tip Angle` | Degrees |
-| `Sampling Frequency` | Hertz |
+|`Needle Diameter`| gauge|
+| `Tip Angle` | degrees |
+| `Sampling Frequency` | hertz |
 | `Displacement x` | meters |
 | `Velocity x` | meters / seconds |
 | `Rotation x` | radians / seconds |
