@@ -156,9 +156,10 @@ The following example illustrates the use of the API.
 
 ```cpp
 
-    // Create a vector of dataset objects
+    // Create a vector of dataset files
     std::vector<std::string> data_vec = {"Data0", "Data1"};
     
+    // Create an array of dataset objects
     AxialForceDataset axial_data[2];
 
     for (int i = 0; i < sizeof(axial_data) / sizeof(axial_data[0]); i++)
