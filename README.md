@@ -5,7 +5,7 @@ axial loads during needle insertion into soft tissue.
 
 ## JSON metadata file structure.
 This section provies a brief descripion of the metadata file structure used 
-for the dataset description. The sections of the the file are the following:
+for the dataset description. The sections of the file are the following:
 
 ### Source Section
 This section provides information with regard to the source of the dataset.
@@ -147,7 +147,7 @@ they are presented in the following table:
 | `Displacement x` | meters |
 | `Velocity x` | meters / seconds |
 | `Rotation x` | radians / seconds |
-| `Force x` | Newtons |
+| `Force x` | newtons |
 
 ## DATASET API
 The dataset API parses the data defined by the DATA_ID: &nbsp; `Datai, i = 1,...,n`.
