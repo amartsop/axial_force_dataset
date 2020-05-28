@@ -33,7 +33,7 @@ section are the following:
 4. `Tip Sharpness`: &nbsp; The needle's tip sharpness. Possible values are: &nbsp;
 <code><i> "Sharp", "Blunt", "Uknown". </i> </code>
 
-5. Tip Lubrication: The needle's lubrication state. Possible values are: &nbsp;
+5. `Tip Lubrication`: The needle's lubrication state. Possible values are: &nbsp;
 <code><i> "Present", "Not Present", "Uknown". </i> </code>
 
 
