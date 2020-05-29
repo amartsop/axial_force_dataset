@@ -13,7 +13,7 @@
     {
         "Needle Diameter": 18, 
         "Tip Type": "Beveled", 
-        "Tip Angle": 10, 
+        "Tip Angle": 0, 
         "Tip Sharpness": "Uknown",
         "Tip Lubrication": "Uknown"
     },
@@ -21,18 +21,18 @@
     "Tissue Characteristics":
     {
         "Tissue Type": "Biological", 
-        "Layers Number": 2,
+        "Layers Number": 1,
         "Tissue Description":
         {
-            "Organ/Location": ["Liver", "Heart"],
-            "Animal": ["Bovine Specimen", "Bovine Specimen"],
-            "State": ["Ex vivo", "Ex vivo"]
+            "Organ/Location": ["Liver"],
+            "Animal": ["Bovine Specimen"],
+            "State": ["Ex vivo"]
         }  
     },
 
     "Measurements":
     {
-        "Sampling Frequency" : 1000,
+        "Sampling Frequency" : 500,
         "Indepedent Variables": ["Displacement x"],
         "Depedent Variables": ["Force x"],
         "Files Names": ["depth_force.csv"],
