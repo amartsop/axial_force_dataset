@@ -32,7 +32,7 @@
 
     "Measurements":
     {
-        "Sampling Frequency" : 500,
+        "Sampling Frequency" : 1000,
         "Indepedent Variables": ["Displacement x"],
         "Depedent Variables": ["Force x"],
         "Files Names": ["depth_force.csv"],
