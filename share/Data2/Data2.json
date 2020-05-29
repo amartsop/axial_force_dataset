@@ -1,0 +1,40 @@
+{ "Data1" : { "Source" : 
+    {
+        "Author": "Maurin, Barbe", 
+        "Paper Title": "In vivo study of forces during needle insertions", 
+        "Year": 2004, 
+        "DOI": "10.1142/9789812702678_0056"
+    },
+
+    "Needle Characteristics":
+    {
+        "Needle Diameter": 18, 
+        "Tip Type": "Beveled", 
+        "Tip Angle": 0, 
+        "Tip Sharpness": "Uknown",
+        "Tip Lubrication": "Uknown"
+    },
+
+    "Tissue Characteristics":
+    {
+        "Tissue Type": "Biological", 
+        "Layers Number": 1,
+        "Tissue Description":
+        {
+            "Organ/Location": ["Liver"],
+            "Animal": ["Porcine Specimen"],
+            "State": ["In vivo"]
+        }  
+    }, 
+ 
+    "Measurements":
+    {
+        "Sampling Frequency" : 1000,
+        "Indepedent Variables": ["Time", "Time"],
+        "Depedent Variables": ["Displacement x", "Force x"],
+        "Files Names": ["time_displacement.csv", "time_force.csv"],
+        "Constants": ["Rotation x"],
+        "Constants Values": [0.000]
+    }
+}
+}
