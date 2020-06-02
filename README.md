@@ -26,7 +26,7 @@ section are the following:
 1. `Needle Diameter`: &nbsp; The diameter of the needle in gauge (G). 
 
 2. `Tip Type`: &nbsp; The tipe of the needle's tip. Possible values are: &nbsp;
-<code><i> "Blunt", "Beveled", "Conical", "Sprotte", "Diamond", "Tuohy", "Franseen", "Uknown". </i></code>
+<code><i> "Blunt", "Beveled", "Conical", "Sprotte", "Diamond", "Tuohy", "Franseen", "Trocar", "Uknown". </i></code>
 
 3. `Tip Angle`: &nbsp; The needle's tip angle in degrees.
 
