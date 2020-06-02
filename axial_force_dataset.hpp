@@ -21,7 +21,7 @@ public:
      * Parses the data file specified by data_id.
      * @param data_id The folder in which the data is located.
     **/
-    void data_parsing(std::string data_id);
+    void data_parsing(std::string data_id, bool data_resampling);
 
     // Getters 
     u_int64_t get_dataset_size(void) { return m_dataset_size; }
@@ -106,7 +106,10 @@ private:
 
     /* Dataset name */
     std::string m_data_id;
-
+    
+    /* Data resampling flag */
+    bool m_data_resampling;
+   
     /* Source section variables */
     std::string m_author_name;
     std::string m_paper_title;
@@ -174,7 +177,7 @@ AxialForceDataset::AxialForceDataset()
 
 /**************** Methods *****************/
 
-void AxialForceDataset::data_parsing(std::string data_id)
+void AxialForceDataset::data_parsing(std::string data_id, bool data_resampling)
 {
     // File name 
     std::string file_name = m_share_rel_dir + data_id + "/" + data_id + ".json";
@@ -188,6 +191,7 @@ void AxialForceDataset::data_parsing(std::string data_id)
     
     // Parsing json file 
     m_data_id = data_id;
+    m_data_resampling = data_resampling;
     auto val = m_j_file[data_id];
     parse_source_section(val);
     parse_needle_section(val);
@@ -265,8 +269,8 @@ void AxialForceDataset::parse_meas_section(nlohmann::json &val)
         ArmaExt::sortrows<arma::fmat>(&x_y_data, true);
         m_x_y.push_back(x_y_data);
     }
-
-    measurements_processing();
+    
+    measurements_processing(); 
 }
 
 
@@ -284,13 +288,16 @@ void AxialForceDataset::measurements_processing(void)
     float sampling_period = 1.0f / m_sampling_frequency;
     int index_max = (float) x_sort.at(x_sort.n_rows-1, 1);
 
-    for(int i = 0; i < m_file_num - 1; i++)
+    if (m_data_resampling)
     {
-        int index = (float) x_sort.at(i, 1);
-        linear_extr_correction(&m_x_y.at(index), &m_x_y.at(index_max));
-        resampling(&m_x_y.at(index), sampling_period);
+        for(int i = 0; i < m_file_num - 1; i++)
+        {
+            int index = (float) x_sort.at(i, 1);
+            linear_extr_correction(&m_x_y.at(index), &m_x_y.at(index_max));
+            resampling(&m_x_y.at(index), sampling_period);
+        }
+        resampling(&m_x_y.at(index_max), sampling_period);
     }
-    resampling(&m_x_y.at(index_max), sampling_period);
 
     // Size of measuremets 
     m_meas_size = (m_x_y.at(0)).n_rows;

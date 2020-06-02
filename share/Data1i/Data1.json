@@ -1,15 +1,15 @@
-{ "Data0" : { "Source" : 
+{ "Data1" : { "Source" : 
     {
-        "Author": "Tonke L. de Jong, Jenny Dankelman,", 
-        "Paper Title": "Dataset on force measurements of needle insertions into two ex-vivo human livers", 
-        "Year": 2017, 
-        "DOI": "10.1016/j.dib.2017.01.018"
+        "Author": "Maurin, Barbe", 
+        "Paper Title": "In vivo study of forces during needle insertions", 
+        "Year": 2004, 
+        "DOI": "10.1142/9789812702678_0056"
     },
 
     "Needle Characteristics":
     {
         "Needle Diameter": 18, 
-        "Tip Type": "Trocar", 
+        "Tip Type": "Beveled", 
         "Tip Angle": 0, 
         "Tip Sharpness": "Uknown",
         "Tip Lubrication": "Uknown"
@@ -22,8 +22,8 @@
         "Tissue Description":
         {
             "Organ/Location": ["Liver"],
-            "Animal": ["Human"],
-            "State": ["Ex vivo"]
+            "Animal": ["Porcine Specimen"],
+            "State": ["In vivo"]
         }  
     }, 
  
